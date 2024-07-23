@@ -5,5 +5,6 @@ app = create_app()
 migrate = Migrate(app, db)
 
 if __name__ == "__main__":
-
+   host='0.0.0.0'
+   print(host)
    app.run(host='0.0.0.0', port=80)
