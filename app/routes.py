@@ -38,7 +38,7 @@ def shorten_url():
     data = request.get_json()
     original_url = data['url']
 
-    prefix='https://ur-lshortener-beryl.vercel.app/'
+    prefix='https://urlshortenerbackend-jaqc.onrender.com/'
     ending=''.join(random.choices(string.ascii_letters + string.digits, k=8))
     
     short_url = prefix+ending
