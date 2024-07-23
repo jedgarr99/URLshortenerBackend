@@ -12,7 +12,7 @@ def create_app():
     app = Flask(__name__)
     CORS(app)
     
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///local.db'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     # Import models to ensure they are registered with SQLAlchemy
     from .models import URL  
